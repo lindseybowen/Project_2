@@ -11,6 +11,9 @@ const db = require('./models');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
