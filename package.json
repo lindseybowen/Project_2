@@ -19,6 +19,7 @@
   "homepage": "https://github.com/lindseybowen/Project_2#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
     "mysql": "^2.18.1",
     "sequelize": "^6.5.0",
     "sequelizer": "^1.1.4"
