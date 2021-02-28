@@ -33,6 +33,8 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//unwraps data from client and store in req.body
+
 // Set Handlebars.
 const exphbs = require('express-handlebars');
 

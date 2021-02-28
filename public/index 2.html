@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+          
+          <!-- logo or branding image on left side -->
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+            
+              <img src="./public/assets/images/globe.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              <h1 class="has-text-weight-bold"> Quick Travel</h1>
+            </a>
+
+            <div class="navbar-burger"  data-target="navbar-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+      
+          <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+          <div class="navbar-menu" id="navbar-menu">
+            <!-- navbar items | left side -->
+            <div class="navbar-start">
+            
+                  <div class="navbar-dropdown">
+              
+                </div>
+            </div>
+      
+            <!-- navbar items | right side -->
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href=""> Home</a>
+              <a class="navbar-item" href="#">Menu</a>
+              <a class="navbar-item" href="#">About</a>
+              <a class="navbar-item" href="#">Sign in</a>
+         
+            </div>
+      
+          </div>
+        </div>
+      </nav>
+
+      <div class="columns" style="flex-wrap: wrap; align-items: stretch;">
+        <div class="column is-two-thirds" >
+            <section class="hero is-link is-fullheight-with-navbar" style='height:100%'>
+                <div class="hero-body">
+                  <div class="column is-4 ">
+                    <p class="title">
+                      Fullheight hero with navbar
+                    </p>
+                    <div class = "is"> 
+                      <div class="field">
+                        <label class="label">From:</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="From:">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">To:</label>
+                        <div class="control">
+                          <input class="input" type="Text" placeholder="To:">
+                        </div>
+                      </div>
+                      <div class="select is-link">
+                        <select>
+                          <option>Number of Passangers</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                      <div class="select is-link">
+                        <select>
+                          <option>Ticket Class</option>
+                          <option>Economy</option>
+                          <option>First Class</option>
+                          <option>Business Class</option>
+                        </select>
+                    
+                    
+                    
+                    </div>
+                    <button class="button is-info is-active">Reserve</button>
+          
+          
+                  </div>
+                  
+                      
+                    </div>
+                 
+                </div>
+              </section>
+               
+
+        </div>
+        <div class="column">
+          <figure class="image is-9by16" style='height:100%'>
+            <img src="./public/assets/images/pexels-taryn-elliott-5405596.jpg">
+          </figure>
+
+        </div>
+        
+            
+          </div>
+        <div class="column"></div>
+      </div> 
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <div class="soc">
+              <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            </div>
+            <p>
+              <strong>Quick Traveler</strong> 
+              All rights reserved 2021 ©<a></a>. <br>
+            </p>
+          </div>
+        </div>
+      </footer>
+    
+
+</html>
