@@ -23,11 +23,11 @@ async function getAccessToken(){
     access_token = await getOAuthToken()
     //restOfApp()
     //this is for sample call
-    restOfApp('SYD','BKK','2021-05-10','2')
+    restOfApp('SYD','BKK','2021-05-10','2','ECONOMY')
 }
 getAccessToken()
-function restOfApp(depPort,arrPort,depDate,adults){
-    fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&adults=${adults}`, {
+function restOfApp(depPort,arrPort,depDate,adults,cabinClass){
+    fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&adults=${adults}&travelClass=${cabinClass}`, {
         headers: {
             'Authorization': 'Bearer ' + access_token,
             'Content-Type': 'application/x-www-form-urlencoded'
