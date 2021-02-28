@@ -1,12 +1,6 @@
+
 var key = "YWqCp1j5LkqKAMf7HknJi73S1AkpeelC"; 
 var secret = "cAA8ehlkyJzw2WXi";
-// var depPsort = ''
-// var arrPort = ''
-// var depDate = ''
-// var reDate = ''
-// var adults = ''
-// var results = ''
-// var token = "";
 let access_token;
 function getOAuthToken(){
     return fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
@@ -36,6 +30,8 @@ function restOfApp(depPort,arrPort,depDate,adults,cabinClass){
         console.log(response)
     })
 }
+
+
 
 
 
