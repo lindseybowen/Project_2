@@ -1,4 +1,4 @@
-DROP IF DATABASE EXISTS filghts_db;
+DROP DATABASE IF EXISTS filghts_db;
 CREATE DATABASE filghts_db;
 USE filghts_db;
 
@@ -16,7 +16,7 @@ CREATE TABLE saved_flights (
     arrival_airport VARCHAR(255) NOT NULL,
     departure_date VARCHAR(255) NOT NULL,
     return_date VARCHAR(255) NOT NULL,
-    oneWay: BOOLEAN DEFAULT false,
-    numberOfBookableSeats: INT
+    oneWay BOOLEAN DEFAULT false,
+    numberOfBookableSeats INT NULL,
     PRIMARY KEY (id)
 )
