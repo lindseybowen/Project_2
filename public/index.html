@@ -60,18 +60,24 @@
                     </p>
                     <div class = "is"> 
                       <div class='field'>
-                        <label class="label has-text-light">Travel Date:</label>
-                        <input class='input' type="text" id="datepicker"></p>
+                        <label class="label has-text-light">Departure Date:</label>
+                        <input class='input' type="text" id="depDate"></p>
                       </div>
+
                       <div class="field">
-                      
-                        <label class="label has-text-light">From:</label>
+                        <div class='field'>
+                          <label class="label has-text-light">Return Date:</label>
+                          <input class='input' type="text" id="reDate"></p>
+                        </div>
+                        <div class="field">
+
+                        <label class="label has-text-light">Departure Airport:</label>
                         <div class="control">
                           <input  id="departure-input" class="input" type="text" placeholder="From:">
                         </div>
                       </div> 
                       <div class="field">
-                        <label class="label has-text-light">To:</label>
+                        <label class="label has-text-light">Destination Airport:</label>
                         <div class="control">
                           <input id="destination-input" Input class="input" type="Text" placeholder="To:">
                         </div>
@@ -151,8 +157,11 @@
 <script src="https://cdn.jsdelivr.net/npm/airport-autocomplete-js@latest/dist/index.browser.min.js"></script>
 <script>
 $( function() {
-$( "#datepicker" ).datepicker(({ dateFormat: 'yy-mm-dd' }))
+$( "#depDate" ).datepicker(({ dateFormat: 'yy-mm-dd' }))
+$( "#reDate" ).datepicker(({ dateFormat: 'yy-mm-dd' }))
 } );
+
+
 
 </script>
 </html>
