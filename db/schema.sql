@@ -11,6 +11,7 @@ CREATE TABLE users (
 
 CREATE TABLE saved_flights (
     id INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL
     flight_num VARCHAR(255) NOT NULL,
     departure_airport VARCHAR(255) NOT NULL,
     arrival_airport VARCHAR(255) NOT NULL,

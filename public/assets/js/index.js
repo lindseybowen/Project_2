@@ -18,12 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             var depPort = document.getElementById('departure-input').value.split(" ")[0]
             var arrPort = document.getElementById('destination-input').value.split(" ")[0]
-            var depDate = document.getElementById('datepicker').value
+            var depDate = document.getElementById('depDate').value
+            var reDate = document.getElementById('reDate').value
             var adults = document.getElementById('adults').value
             var cabinClass = document.getElementById('class').value
-            let searchResult = [depPort,arrPort,depDate,adults,cabinClass]
+            let searchResult = [depPort,arrPort,depDate,reDate,adults,cabinClass]
         console.log("search:"+searchResult)   
-        getAccessToken(depPort,arrPort,depDate,adults,cabinClass)  
+        getAccessToken(depPort,arrPort,depDate,reDate,adults,cabinClass)  
         })
         function getOAuthToken(){
             return fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
@@ -36,14 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 return response.access_token
             })
         }
-        async function getAccessToken(depPort,arrPort,depDate,adults,cabinClass){
+        async function getAccessToken(depPort,arrPort,depDate,reDate,adults,cabinClass){
             access_token = await getOAuthToken()
             //restOfApp()
             //this is for sample call
-            restOfApp(depPort,arrPort,depDate,adults,cabinClass)
+            restOfApp(depPort,arrPort,depDate,reDate,adults,cabinClass)
         }
-        function restOfApp(depPort,arrPort,depDate,adults,cabinClass){
-            fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&adults=${adults}&travelClass=${cabinClass}`, {
+        function restOfApp(depPort,arrPort,depDate,reDate,adults,cabinClass){
+            fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&returnDate=${reDate}&adults=${adults}&travelClass=${cabinClass}`, {
                 headers: {
                     'Authorization': 'Bearer ' + access_token,
                     'Content-Type': 'application/x-www-form-urlencoded'
