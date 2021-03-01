@@ -29,9 +29,8 @@ function restOfApp(depPort,arrPort,depDate,adults,cabinClass){
     }).then(response => response.json()).then(response => {
         console.log(response)
     })
+
 }
-
-
 
 
 
