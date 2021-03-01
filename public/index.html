@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+       <link rel="stylesheet" href="/public/assets/css/style.css">
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>Welcome</title>
 </head>
 <body>
@@ -15,10 +17,10 @@
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
             
-              <img src=".///assets/images/globe.png" alt="Bulma: a modern CSS framework based on Flexbox" width="28" height="28">
-              <h1 class="has-text-weight-bold">  Quick Travel</h1>
+              <img src="./assets/images/globe.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              <h1 class="has-text-weight-bold"> Quick Travel</h1>
             </a>
-
+ 
             <div class="navbar-burger"  data-target="navbar-menu">
               <span></span>
               <span></span>
@@ -38,10 +40,9 @@
       
             <!-- navbar items | right side -->
             <div class="navbar-end">
-              <a class="navbar-item is-active" href=""> Home</a>
-              <a class="navbar-item" href="#">Menu</a>
-              <a class="navbar-item" href="#">About</a>
-              <a class="navbar-item" href="#">Sign in</a>
+              <a class="navbar-item is-active" href="./index.html">Home</a>
+              <a class="navbar-item" href="./members.html">Members</a>
+              <a class="navbar-item" href="./signin.html">Log in</a>
          
             </div>
       
@@ -54,44 +55,56 @@
             <section class="hero is-link is-fullheight-with-navbar" style='height:100%'>
                 <div class="hero-body">
                   <div class="column is-4 ">
-                    <p class="title">
-                      Fullheight hero with navbar
+                    <p class="title has-text-warning">
+                      Travel starts from here.
                     </p>
                     <div class = "is"> 
-                      <div class="field">
-                        <label class="label">From:</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="From:">
-                        </div>
+                      <div class='field'>
+                        <label class="label has-text-light">Travel Date:</label>
+                        <input class='input' type="text" id="datepicker"></p>
                       </div>
                       <div class="field">
-                        <label class="label">To:</label>
+                      
+                        <label class="label has-text-light">From:</label>
                         <div class="control">
-                          <input class="input" type="Text" placeholder="To:">
+                          <input  id="departure-input" class="input" type="text" placeholder="From:">
+                        </div>
+                      </div> 
+                      <div class="field">
+                        <label class="label has-text-light">To:</label>
+                        <div class="control">
+                          <input id="destination-input" Input class="input" type="Text" placeholder="To:">
                         </div>
                       </div>
-                      <div class="select is-link">
-                        <select>
-                          <option>Number of Passangers</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                      <div>
+                        <div class="field">
+                          <label class="label has-text-light">Adults:</label>
+                        <div class="select is-link">
+                          
+                        <select id='adults'>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
                         </select>
                       </div>
-                      <div class="select is-link">
-                        <select>
-                          <option>Ticket Class</option>
-                          <option>Economy</option>
-                          <option>First Class</option>
-                          <option>Business Class</option>
-                        </select>
-                    
-                    
+                    </div>
+            
+                        <div class="field">
+                          <label class="label has-text-light">Class:</label>
+                          <div class="select is-link">
+                            <select id='class'>
+                              <option value="ECONOMY">Economy</option>
+                              <option value="PREMIUM_ECONOMY">Premium Economy</option>
+                              <option value="BUSINESS">Business Class</option>
+                              <option value="FIRST">First Class</option>
+                            </select>
+                        </div>
                     
                     </div>
-                    <button class="button is-info is-active">Reserve</button>
+                    <br>
+                    <button type="submit" id='search-flights'class="button is-info is-active is-warning">Search</button>
           
           
                   </div>
@@ -106,7 +119,7 @@
         </div>
         <div class="column">
           <figure class="image is-9by16" style='height:100%'>
-            <img src=".//assets/images/pexels-taryn-elliott-5405596.jpg">
+            <img src="./assets/images/pexels-taryn-elliott-5405596.jpg">
           </figure>
 
         </div>
@@ -131,6 +144,15 @@
           </div>
         </div>
       </footer>
-    
+</body>
+<script src='./assets/js/index.js'></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/airport-autocomplete-js@latest/dist/index.browser.min.js"></script>
+<script>
+$( function() {
+$( "#datepicker" ).datepicker(({ dateFormat: 'yy-mm-dd' }))
+} );
 
+</script>
 </html>
