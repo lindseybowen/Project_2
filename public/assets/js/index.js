@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //search
     var searchFlight = document.getElementById('search-flights');
-    searchFlight.addEventListener('click', (e) => {
+    if(searchFlight){searchFlight.addEventListener('click', (e) => {
             e.preventDefault();
             var depPort = document.getElementById('departure-input').value.split(" ")[0]
             var arrPort = document.getElementById('destination-input').value.split(" ")[0]
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let searchResult = [depPort,arrPort,depDate,reDate,adults,cabinClass]
         console.log("search:"+searchResult)   
         getAccessToken(depPort,arrPort,depDate,reDate,adults,cabinClass)  
-        })
+        })}
         function getOAuthToken(){
             return fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
                 method: 'POST',
