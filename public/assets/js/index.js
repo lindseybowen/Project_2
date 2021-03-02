@@ -50,8 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             }).then(response => response.json()).then(response => {
-                console.log(response.data[0].price.total)
-                window.open("/flights")
+               // console.log(response.data[0].price.total)
+                localStorage.setItem( 'apiRes',JSON.stringify(response))
+                window.location.href = "/flights";
+                //cosnsole.log(response)
+                
             })
         }
   });
