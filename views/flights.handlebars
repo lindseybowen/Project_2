@@ -3,10 +3,12 @@
     <div class="columns">
       <div class="column has-text-centered">
         <h1 class="title" style="color: Grey;">Flights</h1><br>
+        <hr>
+        <h1>{{hello}}</h1>
       </div>
     </div>
     <div id="app" class="row columns is-multiline">
-      {{!-- {{#each flights}} --}}
+      {{#each flights}}
       <div class="column is-4">
         <div class="card large">
           <div class="card-image">
@@ -20,6 +22,7 @@
                     alt="Image"></figure>
               </div>
               <div class="media-content">
+                <h1>{{bye}}</h1>
                 <p class="title is-4 no-padding">Lead Developer</p>
                 <p><span class="title is-6"><a href="http://twitter.com/twitterid"> twitterid </a></span></p>
                 <p class="subtitle is-6">Lead Developer</p>
@@ -34,7 +37,7 @@
           </div>
         </div>
       </div>
-      {{!-- {{/each}} --}}
+      {{/each}}
 
       {{!-- <div class="column is-4">
         <div class="card large">
