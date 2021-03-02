@@ -1,6 +1,9 @@
 # Project_2
 
 ## Description
+This project is completed for the Columbia University Engineering Full-Stack Coding Boot Camp.
+This app allows the user to find a price of flights for specific departure and return date for Round trip. And it will show no flights not found if there are no flights.
+
 
 ## Deployed App:
  https://thawing-peak-69215.herokuapp.com/
@@ -14,7 +17,7 @@ https://github.com/lindseybowen/Quick_Travel.git
 * [Usages](#usages)
 * [Contribution](#contribution)
 * [License](#license)
-* [Questions](#Questions)
+* [Technical Criteria](#Criteria)
 
 ## Installation
 
@@ -22,18 +25,35 @@ https://github.com/lindseybowen/Quick_Travel.git
 
 
 ## Usages
+THis app can be used to check prices and flights for any destination that user wants to travel.
+## Criteria
+Application complies with project specifications:
+
+* Uses a Node and Express server
+* Uses Handlebars.js as the template engine
+* Backed by a MySQL database with a Sequelize ORM
+* Uses GET and POST routes to retrieve and add new data, respectively, from Google Maps
+* Deployed using Heroku (with data)
+* Uses at least one new library, package, or technology that wasn't discussed in class: AWS S3 cloud storage
+* Has a front end/UI
+* Has a folder structure that fits the model-view-controller (MVC) paradigm
+* Observes coding best practices (indentation, scoping, naming)
+* Protects API keys in Node with environment variables
 
 ## Contribution
 
-### Luwenxi
+### Frontend 
+* Mateo
+* Lindsey
+### Backend
+* Luwenxi
+* Purna
 
-### Lindsey
-
-### Mateo
-
-### Purna
 
 ## License
+MIT License
 
-## Questions
+Copyright [ 2021 Purna, Mateo, Lindsey, Luwenxi ]
+
+
 

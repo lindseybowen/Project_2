@@ -7,6 +7,6 @@ var numbers=results.data.length
 if (numbers==0 || !results){
     $("#alert").html('No flights found')
 }else{
-  
+    
 }
 
