@@ -40,8 +40,25 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Import routes and give the server access to them.
-require("./routes/html-routes")(app);
+app.get('/', (req, res) => {
+  res.render('index');
+});
 
+app.get('/login', (req, res) => {
+  res.render('login');
+});
+
+app.get('/member', (req, res) => {
+  res.render('member');
+});
+
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
+app.get('/flights', (req, res) => {
+  res.render('flights');
+});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, () =>

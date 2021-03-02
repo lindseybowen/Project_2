@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }).then(response => response.json()).then(response => {
                 console.log(response)
+                window.open("/flights")
             })
         }
   });
