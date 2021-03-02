@@ -2,6 +2,11 @@
 
 ## Description
 
+## Deployed App:
+
+## Github Repo:
+https://github.com/lindseybowen/Quick_Travel.git
+
 ## Table of Contents
 
 * [Installation](#installation)
