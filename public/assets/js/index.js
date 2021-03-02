@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //search
     var searchFlight = document.getElementById('search-flights');
-<<<<<<< HEAD
     searchFlight.addEventListener('click', (e) => {
         e.preventDefault();
         const search ={
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cabinClass: document.getElementById('class').value,
         }   
         window.location.href = `/flights?depPort=${search.depPort}&arrPort=${search.arrPort}&depDate=${search.depDate}&reDate=${search.reDate}&adults=${search.adults}&cabinClass=${search.cabinClass}`
-=======
     if(searchFlight){searchFlight.addEventListener('click', (e) => {
             e.preventDefault();
             var depPort = document.getElementById('departure-input').value.split(" ")[0]
@@ -70,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             })
         }
->>>>>>> 7fa2043cbb50bd2f4600600361857464bde7d7a3
   });
 
 })
