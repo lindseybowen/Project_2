@@ -5,7 +5,7 @@
 //const PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
-const db = require('./models');
+//const db = require('./models');
 
 // Sets up the Express app to handle data parsing
 //app.use(express.urlencoded({ extended: true }));
@@ -39,13 +39,14 @@ const exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-
-require("./routes/api-routes")(app);
 // Import routes and give the server access to them.
 require("./routes/html-routes")(app);
 
 
 // Start our server so that it can begin listening to client requests.
-db.sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(`Listening on PORT http://localhost:${PORT}`));
-});
+app.listen(PORT, () =>
+  console.log(`Server listening on: http://localhost:${PORT}`)
+);
+
+
+
