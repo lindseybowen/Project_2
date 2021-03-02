@@ -3,6 +3,7 @@
 ## Description
 
 ## Deployed App:
+ https://thawing-peak-69215.herokuapp.com/
 
 ## Github Repo:
 https://github.com/lindseybowen/Quick_Travel.git
