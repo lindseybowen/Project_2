@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             restOfApp(depPort,arrPort,depDate,reDate,adults,cabinClass)
         }
         function restOfApp(depPort,arrPort,depDate,reDate,adults,cabinClass){
-            fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&returnDate=${reDate}&adults=${adults}&travelClass=${cabinClass}`, {
+            fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${depPort}&destinationLocationCode=${arrPort}&departureDate=${depDate}&returnDate=${reDate}&adults=${adults}&travelClass=${cabinClass}&currencyCode=USD`, {
                 headers: {
                     'Authorization': 'Bearer ' + access_token,
                     'Content-Type': 'application/x-www-form-urlencoded'
@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                // console.log(response.data[0].price.total)
                 localStorage.setItem( 'apiRes',JSON.stringify(response))
                 window.location.href = "/flights";
+                return false
                 //cosnsole.log(response)
                 
             })
