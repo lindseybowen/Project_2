@@ -4,8 +4,8 @@ USE filghts_db;
 
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -21,3 +21,4 @@ CREATE TABLE saved_flights (
     numberOfBookableSeats INT NULL,
     PRIMARY KEY (id)
 )
+git 
