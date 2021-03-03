@@ -1,6 +1,8 @@
 # Project_2
+
 ## Image of our app
 <img width="1440" alt="Screen Shot 2021-03-02 at 7 23 00 PM" src="https://user-images.githubusercontent.com/69695368/109734520-210d6d80-7b8f-11eb-9699-156d2b4e3b17.png">
+
 
 
 ## Description
