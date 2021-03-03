@@ -3,7 +3,7 @@
 
 ## Description
 This project is completed for the Columbia University Engineering Full-Stack Coding Boot Camp.
-This app allows the user to find a price of flights for specific departure and return date for Round trip. And it will show no flights not found if there are no flights.
+This app allows the user to compare price of flights to travel which helps users to find cheaper price and save money for Round trip. And it will show no flights not found if there are no flights.
 
 
 ## Deployed App:
