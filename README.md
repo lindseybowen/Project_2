@@ -1,4 +1,5 @@
-# Project_2
+# Quick_Travel
+<img width="1440" alt="Screen Shot 2021-03-02 at 7 23 00 PM" src="https://user-images.githubusercontent.com/69695368/109744313-0ee7fb00-7ba0-11eb-919d-09f2bd785813.png">
 
 ## Description
 This project is completed for the Columbia University Engineering Full-Stack Coding Boot Camp.
