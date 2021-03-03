@@ -4,7 +4,7 @@
 ## Description
 This project is completed for the Columbia University Engineering Full-Stack Coding Boot Camp.
 This app allows the user to compare price of flights to travel which helps users to find cheaper price and save money for Round trip. And it will show no flights not found if there are no flights.
-
+### Google slides link: https://docs.google.com/presentation/d/1jKvx2tYT-nCZNjbe7Wfvsd6p_PgC6wnGghtQjtaP2I8/edit?usp=sharing
 
 ## Deployed App:
  https://thawing-peak-69215.herokuapp.com/
