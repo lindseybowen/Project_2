@@ -4,7 +4,8 @@
 ## Description
 This project is completed for the Columbia University Engineering Full-Stack Coding Boot Camp.
 This app allows the user to compare price of flights to travel which helps users to find cheaper price and save money for Round trip. And it will show no flights not found if there are no flights.
-### Google slides link: https://docs.google.com/presentation/d/1jKvx2tYT-nCZNjbe7Wfvsd6p_PgC6wnGghtQjtaP2I8/edit?usp=sharing
+
+[Slides](https://docs.google.com/presentation/d/1jKvx2tYT-nCZNjbe7Wfvsd6p_PgC6wnGghtQjtaP2I8/edit?usp=sharing)
 
 ## Deployed App:
  https://thawing-peak-69215.herokuapp.com/
@@ -22,11 +23,11 @@ https://github.com/lindseybowen/Quick_Travel.git
 
 ## Installation
 
- Install npm init, npm i, 
-
+ Install npm init, npm i 
 
 ## Usages
-THis app can be used to check prices and flights for any destination that user wants to travel.
+This app can be used to check prices and flights for any destination that user wants to travel.
+
 ## Criteria
 Application complies with project specifications:
 
@@ -42,14 +43,10 @@ Application complies with project specifications:
 * Protects API keys in Node with environment variables
 
 ## Contribution
-
-### Frontend 
-* Mateo
-* Lindsey
-### Backend
-* Luwenxi
-* Purna
-
+* Mateo: Layout Design, Wire frame, Javascript controllers, Bulma Implementation, Handlebars, API render 
+* Lindsey: Github Repo, Layout Design, API implementation, Styling, Handlebars, API render
+* Luwenxi: Database connection, Server.js, Routes and connections, App functionality, Handlebars 
+* Purna: Readme, Created file structure, Heroku deployment, Javascript connection server
 
 ## License
 MIT License
